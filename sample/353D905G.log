@@ -1,0 +1,161 @@
+Logging to file log_30mei//353D905G.log
+                        __  __  ____   _____
+                  /\   |  \/  |/ __ \ / ____|
+                 /  \  | \  / | |  | | (___  
+                / /\ \ | |\/| | |  | |\___ \ 
+               / ____ \| |  | | |__| |____) |
+              /_/    \_\_|  |_|\____/|_____/
+              OSS Framework for MoShell-17.0p 
+              
+           
+[1;31mWARNING: [0mthe AMOS version currently running is more than 22 weeks old.
+It is recommended to always use the latest released moshell version.
+To obtain the latest released version contact your local Ericsson support.
+
+$amosrb_pid = 28382
+
+Checking ip contact...OK
+
+HELP MENU            : h
+BASIC MO COMMANDS    : m
+OTHER MO COMMANDS    : n
+OTHER COMMANDS       : o
+PM COMMANDS          : p
+QUIT                 : q
+
+353D905G> lt all
+
+180530-10:58:56 10.116.65.150 17.0p  stopfile=/tmp/19188
+Checking MOM version...RBS_NODE_MODEL_U_4_460
+Parsing MOM (cached): /var/opt/ericsson/amos/moshell_logfiles/eidarif/logs_moshell/tempfiles/20180530-105828_6955/RBS_NODE_MODEL_U_4_460.xml.cache.gz ...................................................................Done.
+Using paramfile /opt/ericsson/amos/moshell/commonjars/pm/PARAM_RBS_U_4_460.txt
+Parsing file /opt/ericsson/amos/moshell/commonjars/pm/PARAM_RBS_U_4_460.txt ..............................................................................................Done.
+Fetching IOR file...Done.
+Connecting to 10.116.65.150:56834 (CorbaSecurity=OFF, corba_class=2, java=1.7.0_51, jacoms=R93D03, jacorb=R89C01)
+**** Welcome to the Simple Mo Browser (version 3.0)!
+Trying file=/var/opt/ericsson/amos/moshell_logfiles/eidarif/logs_moshell/tempfiles/20180530-105828_6955/ior6955
+**** Test Construction OK
+****
+
+$mobrowser_pid = 19266
+
+Connected to 10.116.65.150 (SubNetwork=ONRM_ROOT_MO_R,SubNetwork=RNKLP02,MeContext=353D905G,ManagedElement=1)
+Connected to 10.116.65.150 (SubNetwork=ONRM_ROOT_MO_R,SubNetwork=RNKLP02,MeContext=353D905G,ManagedElement=1)
+Last MO:  1592. Loaded 1592 MOs. Total:  1593 MOs.
+
+353D905G> get 0
+
+180530-10:59:10 10.116.65.150 17.0p RBS_NODE_MODEL_U_4_460 stopfile=/tmp/19188
+=================================================================================================================
+0                                    ManagedElement=1
+=================================================================================================================
+ManagedElementId                     1
+applicationConfiguration             t[0] = 
+faultTolerantCoreStates              s[1] = ManagedElement=1,Equipment=1,Subrack=1,Slot=1,PlugInUnit=1;ftcState=Active 
+healthCheckResult                    Struct{3}
+ >>> 1.healthCheckResultCode = 99 (INITIAL_VALUE)
+ >>> 2.message = 
+ >>> 3.startTime = 
+healthCheckSchedule                  t[0] = 
+logicalName                          3G_JUMO_TEMANGGUNG
+mimInfo                              Struct{3}
+ >>> 1.mimName = RBS_NODE_MODEL_U
+ >>> 2.mimVersion = 4.460
+ >>> 3.mimRelease = 
+productName                          RBS6320W
+productNumber                        DUW_NO_BACKPLANE
+productRevision                      
+productType                          Node
+site                                 353D905G
+userLabel                            353D905G
+=================================================================================================================
+Total: 1 MOs
+
+
+353D905G> st cell
+
+180530-10:59:11 10.116.65.150 17.0p RBS_NODE_MODEL_U_4_460 stopfile=/tmp/19188
+===================================================================================
+Proxy  Adm State     Op. State     MO
+===================================================================================
+ 1525                1 (ENABLED)   NodeBFunction=1,RbsLocalCell=S1C1
+ 1530                1 (ENABLED)   NodeBFunction=1,RbsLocalCell=S2C1
+ 1590                1 (ENABLED)   NodeBFunction=1,RbsLocalCell=S3C1
+===================================================================================
+Total: 3 MOs
+
+353D905G> alt
+
+180530-10:59:11 10.116.65.150 17.0p RBS_NODE_MODEL_U_4_460 stopfile=/tmp/19188
+
+Connecting to 10.116.65.150:56834 (CorbaSecurity=OFF, corba_class=2, java=1.7.0_51, jacoms=R93D03, jacorb=R89C01)
+Trying file=/var/opt/ericsson/amos/moshell_logfiles/eidarif/logs_moshell/tempfiles/20180530-105828_6955/ior6955
+Resolving the alarm service in OMS...
+Simple Alarm Client initialized...
+Starting to retrieve active alarms
+Nr of active alarms are: 0
+====================================================================================================================
+Date & Time (Local) S Specific Problem                    MO (Cause/AdditionalInfo)
+====================================================================================================================
+>>> Total: 0 Alarms (0 Critical, 0 Major)
+
+353D905G> invxrfc
+
+180530-10:59:15 10.116.65.150 17.0p RBS_NODE_MODEL_U_4_460 stopfile=/tmp/19188
+Connected to 10.116.65.150 (SubNetwork=ONRM_ROOT_MO_R,SubNetwork=RNKLP02,MeContext=353D905G,ManagedElement=1)
+Last MO:  1592. Loaded 1592 MOs. Total:  1593 MOs.
+
+Checking available boards on node...
+Trying password from script file: /var/opt/ericsson/amos/moshell_logfiles/eidarif/logs_moshell/tempfiles/20180530-105828_6955/monodeCmd19188...
+
+Collecting CPP board data...
+.........
+
+Collecting RBS board data...
+
+Created following board-groups: all, allp, mp, bp, tu, coremp, ommp, scb, sxb, scx, sccpmp, et, etmfg, etmfx, aal2ap, aal2ncc, aal2cpsrc, aal2rh, xp, rax, tx, ru, ru[0-6].
+>>> Type "bp" to view available board-groups and "bp <group>" to view group contents.
+
+Collecting TN data...
+.........
+Collecting RF data...
+put /var/opt/ericsson/amos/moshell_logfiles/eidarif/logs_moshell/tempfiles/20180530-105828_6955/lhCmd1918820180530105853 /d/usr/lhCmd1918820180530105853 ... OK
+..........................................................................................................................
+
+Node: RBS6320W    DUW_NO_BACKPLANE CXP9023291/7_R2CA17 W17A.4 (C17.0-LSV198-PA24)
+
+=====================================================================================================================================
+SMN ;APN  ;BOARD    ;SWALLOCATION  ;S  ;FAULT OPER MAINT STAT   ;c/p ;  d  ;PRODUCTNUMBER  ;REV   ;SERIAL     ;DATE     ;MO
+=====================================================================================================================================
+  0 ;  1  ;DUW4101  ;Main_DUW      ;1;  OFF   ON   OFF   OFF    ;29% ;26%  ;KDU127174/4    ;R2F   ;CD3J383815 ;20160406 ;1,Slot=1  (1152/1152 CE)
+-------------------------------------------------------------------------------------------------------------------------------------
+
+=====================================================================================================================================
+XPBOARD   ;ST;  FAULT OPER MAINT  ;PRODUCTNUMBER   ;REV     ;SERIAL/NAME   ;DATE     ; TEMP ; UPT ;MO (LNH)
+=====================================================================================================================================
+RRUS12B8  ; 1;  OFF   ON   OFF    ;KRC161262/2     ;R2D     ;D823975385    ;20160609 ; 42.1 ;55.8 ;SectorAntenna=1-1,AuxPlugInUnit=RRUW-1 (000100/port_0_dev_8)
+RRUS12B8  ; 1;  OFF   ON   OFF    ;KRC161262/2     ;R2D     ;D823975414    ;20160609 ; 40.1 ;55.7 ;SectorAntenna=2-1,AuxPlugInUnit=RRUW-1 (000100/port_1_dev_9)
+RRUS12B8  ; 1;  OFF   ON   OFF    ;KRC161262/2     ;R2D     ;D823943065    ;20160604 ; 44.7 ;55.6 ;SectorAntenna=3-1,AuxPlugInUnit=RRUW-1 (000100/port_2_dev_10)
+RBS6320   ;  ;                    ;504/BFM901591/26 ;R1A     ;C970001276    ;20160913 ;      ;     ;Cabinet=1
+-------------------------------------------------------------------------------------------------------------------------------------
+
+=====================================================================================================================================
+MO            SMN  PRODUCT    PRODUCTNUMBER    REV     SERIAL/NAME     DATE      transmissionType     maxPwr  fanConfiguration  position
+=====================================================================================================================================
+Subrack=1       0  Subrack    SXK1098604/1     *       Radio Subrack             ETHERNET_CABLE       2500W   NO_CPP_FAN        0Z0
+
+=====================================================================================================================================
+AuxPiu     ;LNH                  ;BOARD    ;RF  ;TX (W/dBm)  ;VSWR (RL)   ;RX (dBm)  ;Sector/Cells (localCellIds/CellIds,PCIs)
+=====================================================================================================================================
+1-1/RRUW-1 ;000100/port_0_dev_8  ;RRUS12B8 ; A  ;37.4 (45.7) ;1.23 (19.8) ;-106.4    ;SR=1* S1C1 (30961)
+1-1/RRUW-1 ;000100/port_0_dev_8  ;RRUS12B8 ; B  ;31.2 (44.9) ;1.20 (20.8) ;-108.5    ;SR=1* S1C1 (30961)
+2-1/RRUW-1 ;000100/port_1_dev_9  ;RRUS12B8 ; A  ;38.6 (45.9) ;1.31 (17.4) ;-113.7    ;SR=2* S2C1 (30962)
+2-1/RRUW-1 ;000100/port_1_dev_9  ;RRUS12B8 ; B  ;31.2 (44.9) ;1.27 (18.5) ;-110.6    ;SR=2* S2C1 (30962)
+3-1/RRUW-1 ;000100/port_2_dev_10 ;RRUS12B8 ; A  ;38.3 (45.8) ;1.39 (15.7) ;-110.9    ;SR=3* S3C1 (30963)
+3-1/RRUW-1 ;000100/port_2_dev_10 ;RRUS12B8 ; B  ;32.1 (45.1) ;1.18 (21.7) ;-114.3    ;SR=3* S3C1 (30963)
+-------------------------------------------------------------------------------------------------------------------------------------
+Tip: use option "g" to print graphical view of CPRI connections and RF connections.
+
+353D905G> q!!
+Bye...
+Output has been logged to file log_30mei//353D905G.log

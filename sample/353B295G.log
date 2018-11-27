@@ -1,0 +1,165 @@
+Logging to file log_30mei//353B295G.log
+                        __  __  ____   _____
+                  /\   |  \/  |/ __ \ / ____|
+                 /  \  | \  / | |  | | (___  
+                / /\ \ | |\/| | |  | |\___ \ 
+               / ____ \| |  | | |__| |____) |
+              /_/    \_\_|  |_|\____/|_____/
+              OSS Framework for MoShell-17.0p 
+              
+           
+[1;31mWARNING: [0mthe AMOS version currently running is more than 22 weeks old.
+It is recommended to always use the latest released moshell version.
+To obtain the latest released version contact your local Ericsson support.
+
+$amosrb_pid = 28211
+
+Checking ip contact...OK
+
+HELP MENU            : h
+BASIC MO COMMANDS    : m
+OTHER MO COMMANDS    : n
+OTHER COMMANDS       : o
+PM COMMANDS          : p
+QUIT                 : q
+
+353B295G> lt all
+
+180530-10:58:56 10.116.65.142 17.0p  stopfile=/tmp/18898
+Checking MOM version...RBS_NODE_MODEL_U_4_460
+Parsing MOM (cached): /var/opt/ericsson/amos/moshell_logfiles/eidarif/logs_moshell/tempfiles/20180530-105829_7888/RBS_NODE_MODEL_U_4_460.xml.cache.gz ...................................................................Done.
+Using paramfile /opt/ericsson/amos/moshell/commonjars/pm/PARAM_RBS_U_4_460.txt
+Parsing file /opt/ericsson/amos/moshell/commonjars/pm/PARAM_RBS_U_4_460.txt ..............................................................................................Done.
+Fetching IOR file...Done.
+Connecting to 10.116.65.142:56834 (CorbaSecurity=OFF, corba_class=2, java=1.7.0_51, jacoms=R93D03, jacorb=R89C01)
+**** Welcome to the Simple Mo Browser (version 3.0)!
+Trying file=/var/opt/ericsson/amos/moshell_logfiles/eidarif/logs_moshell/tempfiles/20180530-105829_7888/ior7888
+**** Test Construction OK
+****
+
+$mobrowser_pid = 16871
+
+Connected to 10.116.65.142 (SubNetwork=ONRM_ROOT_MO_R,SubNetwork=RNSMG06,MeContext=353B295G,ManagedElement=1)
+Connected to 10.116.65.142 (SubNetwork=ONRM_ROOT_MO_R,SubNetwork=RNSMG06,MeContext=353B295G,ManagedElement=1)
+Last MO:  1588. Loaded 1588 MOs. Total:  1589 MOs.
+
+353B295G> get 0
+
+180530-10:59:08 10.116.65.142 17.0p RBS_NODE_MODEL_U_4_460 stopfile=/tmp/18898
+=================================================================================================================
+0                                    ManagedElement=1
+=================================================================================================================
+ManagedElementId                     1
+applicationConfiguration             t[0] = 
+faultTolerantCoreStates              s[1] = ManagedElement=1,Equipment=1,Subrack=1,Slot=1,PlugInUnit=1;ftcState=Active 
+healthCheckResult                    Struct{3}
+ >>> 1.healthCheckResultCode = 99 (INITIAL_VALUE)
+ >>> 2.message = 
+ >>> 3.startTime = 
+healthCheckSchedule                  t[0] = 
+logicalName                          3G_KALORAN
+mimInfo                              Struct{3}
+ >>> 1.mimName = RBS_NODE_MODEL_U
+ >>> 2.mimVersion = 4.460
+ >>> 3.mimRelease = 
+productName                          RBS6320W
+productNumber                        DUW_NO_BACKPLANE
+productRevision                      
+productType                          Node
+site                                 353B295G
+userLabel                            353B295G
+=================================================================================================================
+Total: 1 MOs
+
+
+353B295G> st cell
+
+180530-10:59:09 10.116.65.142 17.0p RBS_NODE_MODEL_U_4_460 stopfile=/tmp/18898
+===================================================================================
+Proxy  Adm State     Op. State     MO
+===================================================================================
+ 1521                1 (ENABLED)   NodeBFunction=1,RbsLocalCell=S1C1
+ 1522                1 (ENABLED)   NodeBFunction=1,RbsLocalCell=S2C1
+ 1586                1 (ENABLED)   NodeBFunction=1,RbsLocalCell=S3C1
+===================================================================================
+Total: 3 MOs
+
+353B295G> alt
+
+180530-10:59:09 10.116.65.142 17.0p RBS_NODE_MODEL_U_4_460 stopfile=/tmp/18898
+
+Connecting to 10.116.65.142:56834 (CorbaSecurity=OFF, corba_class=2, java=1.7.0_51, jacoms=R93D03, jacorb=R89C01)
+Trying file=/var/opt/ericsson/amos/moshell_logfiles/eidarif/logs_moshell/tempfiles/20180530-105829_7888/ior7888
+Resolving the alarm service in OMS...
+Simple Alarm Client initialized...
+Starting to retrieve active alarms
+Nr of active alarms are: 4
+====================================================================================================================
+Date & Time (Local) S Specific Problem                    MO (Cause/AdditionalInfo)
+====================================================================================================================
+2018-05-26 01:47:26 M RfPortReflectedPowerTooHigh         SectorAntenna=3-1,AuxPlugInUnit=RRUW-1,RruDeviceGroup=1,AiDeviceSet=1,AiDevice=2 (equipment_malfunction)
+2018-05-26 01:47:28 M Carrier_TxBranchFailure             Sector=3,Carrier=1 (DN2: SubNetwork=ONRM_ROOT_MO_R,SubNetwork=RNSMG06,MeContext=353B295G,ManagedElement=1,Equipment=1,SectorAntenna=3-1,AuxPlugInUnit=RRUW-1,RruDeviceGroup=1,AiDeviceSet=1,AiDevice=2)
+2018-05-26 01:47:28 M Carrier_RxDiversityLost             Sector=3,Carrier=1 (DN2: SubNetwork=ONRM_ROOT_MO_R,SubNetwork=RNSMG06,MeContext=353B295G,ManagedElement=1,Equipment=1,SectorAntenna=3-1,AuxPlugInUnit=RRUW-1,RruDeviceGroup=1,AiDeviceSet=1,AiDevice=2)
+2018-05-26 01:47:35 M Carrier_SignalNotReceivedWithinTime Sector=3,Carrier=1 (DN2: SubNetwork=ONRM_ROOT_MO_R,SubNetwork=RNSMG06,MeContext=353B295G,ManagedElement=1,Equipment=1,SectorAntenna=3-1,AuxPlugInUnit=RRUW-1,RruDeviceGroup=1,TrDeviceSet=1,TrDevice=2)
+>>> Total: 4 Alarms (0 Critical, 4 Major)
+
+353B295G> invxrfc
+
+180530-10:59:13 10.116.65.142 17.0p RBS_NODE_MODEL_U_4_460 stopfile=/tmp/18898
+Connected to 10.116.65.142 (SubNetwork=ONRM_ROOT_MO_R,SubNetwork=RNSMG06,MeContext=353B295G,ManagedElement=1)
+Last MO:  1588. Loaded 1588 MOs. Total:  1589 MOs.
+
+Checking available boards on node...
+Trying password from script file: /var/opt/ericsson/amos/moshell_logfiles/eidarif/logs_moshell/tempfiles/20180530-105829_7888/monodeCmd18898...
+
+Collecting CPP board data...
+.........
+
+Collecting RBS board data...
+
+Created following board-groups: all, allp, mp, bp, tu, coremp, ommp, scb, sxb, scx, sccpmp, et, etmfg, etmfx, aal2ap, aal2ncc, aal2cpsrc, aal2rh, xp, rax, tx, ru, ru[0-6].
+>>> Type "bp" to view available board-groups and "bp <group>" to view group contents.
+
+Collecting TN data...
+.........
+Collecting RF data...
+put /var/opt/ericsson/amos/moshell_logfiles/eidarif/logs_moshell/tempfiles/20180530-105829_7888/lhCmd1889820180530105853 /d/usr/lhCmd1889820180530105853 ... OK
+..........................................................................................................................
+
+Node: RBS6320W    DUW_NO_BACKPLANE CXP9023291/7_R2CA17 W17A.4 (C17.0-LSV198-PA24)
+
+=====================================================================================================================================
+SMN ;APN  ;BOARD    ;SWALLOCATION  ;S  ;FAULT OPER MAINT STAT   ;c/p ;  d  ;PRODUCTNUMBER  ;REV   ;SERIAL     ;DATE     ;MO
+=====================================================================================================================================
+  0 ;  1  ;DUW4101  ;Main_DUW      ;1;  OFF   ON   OFF   05HZ   ;29% ;30%  ;KDU127174/4    ;R2F   ;CD3J242338 ;20160330 ;1,Slot=1  (1152/1152 CE)
+-------------------------------------------------------------------------------------------------------------------------------------
+
+=====================================================================================================================================
+XPBOARD   ;ST;  FAULT OPER MAINT  ;PRODUCTNUMBER   ;REV     ;SERIAL/NAME   ;DATE     ; TEMP ; UPT ;MO (LNH)
+=====================================================================================================================================
+RRUS12B8  ; 1;  OFF   ON   OFF    ;KRC161262/2     ;R1H     ;D823523579    ;20160412 ; 42.5 ;7.95 ;SectorAntenna=1-1,AuxPlugInUnit=RRUW-1 (000100/port_0_dev_8)
+RRUS12B8  ; 1;  OFF   ON   OFF    ;KRC161262/2     ;R1H     ;D823523589    ;20160412 ; 43.6 ;7.95 ;SectorAntenna=2-1,AuxPlugInUnit=RRUW-1 (000100/port_1_dev_9)
+RRUS12B8  ; 1;  ON    ON   OFF    ;KRC161262/2     ;R1D     ;CB4P254543    ;20121106 ; 37.4 ;4.38 ;SectorAntenna=3-1,AuxPlugInUnit=RRUW-1 (000100/port_2_dev_10)
+RBS6320   ;  ;                    ;300/BFM901591   ;R1A     ;D823169450    ;20160305 ;      ;     ;Cabinet=1
+-------------------------------------------------------------------------------------------------------------------------------------
+
+=====================================================================================================================================
+MO            SMN  PRODUCT    PRODUCTNUMBER    REV     SERIAL/NAME     DATE      transmissionType     maxPwr  fanConfiguration  position
+=====================================================================================================================================
+Subrack=1       0  Subrack    SXK1098604/1     *       Radio Subrack             ETHERNET_CABLE       2500W   NO_CPP_FAN        0Z0
+
+=====================================================================================================================================
+AuxPiu     ;LNH                  ;BOARD    ;RF  ;TX (W/dBm)  ;VSWR (RL)   ;RX (dBm)  ;Sector/Cells (localCellIds/CellIds,PCIs)
+=====================================================================================================================================
+1-1/RRUW-1 ;000100/port_0_dev_8  ;RRUS12B8 ; A  ;23.5 (43.7) ;1.24 (19.5) ;-110.3    ;SR=1* S1C1 (30881)
+1-1/RRUW-1 ;000100/port_0_dev_8  ;RRUS12B8 ; B  ;23.4 (43.7) ;1.27 (18.5) ;-109.8    ;SR=1* S1C1 (30881)
+2-1/RRUW-1 ;000100/port_1_dev_9  ;RRUS12B8 ; A  ;30.1 (44.8) ;1.26 (18.7) ;-104.3    ;SR=2* S2C1 (30882)
+2-1/RRUW-1 ;000100/port_1_dev_9  ;RRUS12B8 ; B  ;30.5 (44.8) ;1.19 (21.4) ;-108.0    ;SR=2* S2C1 (30882)
+3-1/RRUW-1 ;000100/port_2_dev_10 ;RRUS12B8 ; A  ;45.7 (46.6) ;1.24 (19.3) ;-103.5    ;SR=3* S3C1 (30883)
+3-1/RRUW-1 ;000100/port_2_dev_10 ;RRUS12B8 ; B  ;0           ;-           ;-109.4    ;SR=3* S3C1 (30883)
+-------------------------------------------------------------------------------------------------------------------------------------
+Tip: use option "g" to print graphical view of CPRI connections and RF connections.
+
+353B295G> q!!
+Bye...
+Output has been logged to file log_30mei//353B295G.log
