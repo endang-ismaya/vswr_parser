@@ -1,0 +1,144 @@
+Log start: 200303-172401 - 10.135.243.8 - moshell 19.0g - /home/v0290320/.gconfd/Seaplane/vswr_parser/sample/N-TTN302MM1-KLUET-TENGAH.log
+
+N-TTN302MM1-KLUET-TENGAH> lt all
+
+200303-17:24:01 10.135.243.8 19.0g MSRBS_NODE_MODEL_19.Q4_423.28070.65_e4d6 stopfile=/tmp/25935
+Connected to 10.135.243.8 (SubNetwork=ONRM_ROOT_MO,SubNetwork=LTE_Aceh,MeContext=N-TTN302MM1-KLUET-TENGAH,ManagedElement=N-TTN302MM1-KLUET-TENGAH)
+
+Last MO: 12795. Loaded 12795 MOs. Total: 12796 MOs.
+
+N-TTN302MM1-KLUET-TENGAH> get 0
+
+200303-17:24:10 10.135.243.8 19.0g MSRBS_NODE_MODEL_19.Q4_423.28070.65_e4d6 stopfile=/tmp/25935
+=================================================================================================================
+0                                    ManagedElement=N-TTN302MM1-KLUET-TENGAH
+=================================================================================================================
+dnPrefix                             SubNetwork=ONRM_ROOT_MO,SubNetwork=LTE_Aceh,MeContext=N-TTN302MM1-KLUET-TENGAH
+locationName                         
+logicalName                          N-TTN302MM1-KLUET-TENGAH
+managedElementId                     N-TTN302MM1-KLUET-TENGAH
+managedElementType                   RadioNode
+managedElementTypeList               s[8] = Bts ENodeB EquipmentSupport GNBCUCP GNBCUUP GNBDU Mce NodeB 
+networkManagedElementId              N-TTN302MM1-KLUET-TENGAH
+release                              19.Q4
+siteLocation                         
+swVersion                            19.Q4
+userDefinedState                     
+userLabel                            
+vendorName                           Ericsson AB
+=================================================================================================================
+Total: 1 MOs
+
+
+N-TTN302MM1-KLUET-TENGAH> st cell
+
+200303-17:24:11 10.135.243.8 19.0g MSRBS_NODE_MODEL_19.Q4_423.28070.65_e4d6 stopfile=/tmp/25935
+===================================================================================
+Proxy  Adm State     Op. State     MO
+===================================================================================
+   70  1 (UNLOCKED)  1 (ENABLED)   ENodeBFunction=1,EUtranCellFDD=TTN302ML1
+  184  1 (UNLOCKED)  1 (ENABLED)   ENodeBFunction=1,EUtranCellFDD=TTN302ML2
+  293  1 (UNLOCKED)  1 (ENABLED)   ENodeBFunction=1,EUtranCellFDD=TTN302ML3
+  386  1 (UNLOCKED)  1 (ENABLED)   ENodeBFunction=1,EUtranCellFDD=TTN302MT1
+  500  1 (UNLOCKED)  1 (ENABLED)   ENodeBFunction=1,EUtranCellFDD=TTN302MT2
+  610  1 (UNLOCKED)  1 (ENABLED)   ENodeBFunction=1,EUtranCellFDD=TTN302MT3
+  708  1 (UNLOCKED)  1 (ENABLED)   ENodeBFunction=1,EUtranCellTDD=TTN302ME1
+  797  1 (UNLOCKED)  1 (ENABLED)   ENodeBFunction=1,EUtranCellTDD=TTN302ME2
+  886  1 (UNLOCKED)  1 (ENABLED)   ENodeBFunction=1,EUtranCellTDD=TTN302ME3
+===================================================================================
+Total: 9 MOs
+
+N-TTN302MM1-KLUET-TENGAH> invxrfc
+
+200303-17:24:12 10.135.243.8 19.0g MSRBS_NODE_MODEL_19.Q4_423.28070.65_e4d6 stopfile=/tmp/25935
+Connected to 10.135.243.8 (SubNetwork=ONRM_ROOT_MO,SubNetwork=LTE_Aceh,MeContext=N-TTN302MM1-KLUET-TENGAH,ManagedElement=N-TTN302MM1-KLUET-TENGAH)
+
+Last MO: 12795. Loaded 12795 MOs. Total: 12796 MOs.
+
+Collecting TN data...
+
+Collecting RF data...
+
+Node: RadioNode GL   CXP9024418/6_R80F30 (19.Q4)
+
+=====================================================================================================================================
+FRU    ;LNH      ;BOARD       ;ST ;FAULT ;OPER ;MAINT ;STAT ;PRODUCTNUMBER   ;REV     ;SERIAL        ;DATE     ; TEMP ; UPT
+=====================================================================================================================================
+1      ;000100   ;DUS5301     ; 1 ;  OFF ;  ON ;  OFF ;  ON ;KDU137848/11    ;R2B     ;B441181399    ;20180308 ;      ;      (Bb6630)
+RRU-1  ;BXP_2048 ;RRU2219B3   ; 1 ;  OFF ;  ON ;  OFF ; N/A ;KRC161619/1     ;R2C     ;CD3V666232    ;20180207 ; 35.3 ;3.18  (Radio2219B3)
+RRU-2  ;BXP_2049 ;RRU2219B3   ; 1 ;  OFF ;  ON ;  OFF ; N/A ;KRC161619/1     ;R2C     ;CD3V642131    ;20180205 ; 38.8 ;1.82  (Radio2219B3)
+RRU-3  ;BXP_2050 ;RRU2219B3   ; 1 ;  OFF ;  ON ;  OFF ; N/A ;KRC161619/1     ;R2C     ;CD3V642052    ;20180205 ; 38.5 ;2.40  (Radio2219B3)
+RRU-4  ;BXP_2051 ;RRUS12B8    ; 1 ;  OFF ;  ON ;  OFF ; N/A ;KRC161262/2     ;R1C     ;CB4P563063    ;20121208 ; 42.4 ;3.18 
+RRU-5  ;BXP_2052 ;RRUS12B8    ; 1 ;  OFF ;  ON ;  OFF ; N/A ;KRC161262/2     ;R1H     ;D821175751    ;20150504 ; 41.2 ;1.46 
+RRU-6  ;BXP_2053 ;RRUS12B8    ; 1 ;  OFF ;  ON ;  OFF ; N/A ;KRC161262/2     ;R1H     ;D821087281    ;20150416 ; 39.8 ;1.46 
+RRU-10 ;BXP_2054 ;RRU4418B40T ; 1 ;  OFF ;  ON ;  OFF ; N/A ;KRC161706/1     ;R1F     ;E555094896    ;20191119 ; 38.5 ;2.51  (Radio4418B40T)
+RRU-11 ;BXP_2055 ;RRU4418B40T ; 1 ;  OFF ;  ON ;  OFF ; N/A ;KRC161706/1     ;R1F     ;E555094887    ;20191119 ; 38.5 ;2.40  (Radio4418B40T)
+RRU-12 ;BXP_2056 ;RRU4418B40T ; 1 ;  OFF ;  ON ;  OFF ; N/A ;KRC161706/1     ;R1F     ;E555075197    ;20191118 ; 41.5 ;1.82  (Radio4418B40T)
+PDU-1  ;Z??_01   ;            ; L ;    ? ;   ? ;    ? ;   ? ;                ;        ;              ;         ;      ;     
+SAU    ;Z??_02   ;            ; L ;    ? ;   ? ;    ? ;   ? ;                ;        ;              ;         ;      ;     
+SAU-1  ;Z??_03   ;SAU0201     ; L ;    ? ;   ? ;    ? ;   ? ;ZHY60119/1      ;R1E     ;E552059803    ;20190314 ;      ;     
+SCU    ;Z??_04   ;            ; L ;    ? ;   ? ;    ? ;   ? ;                ;        ;              ;         ;      ;     
+-------------------------------------------------------------------------------------------------------------------------------------
+
+=====================================================================================================================================
+AntennaNearUnit                       ;ST  ;TYPE   ;PRODUCTNR  ;REV              ;UNIQUEID             ;RfPort
+=====================================================================================================================================
+AntennaUnitGroup=4,AntennaNearUnit=1  ; 1  ;S-RET  ;FlexRCU    ;Hw-V3.00@161010  ;MTAU011J402748T--R1  ;FieldReplaceableUnit=RRU-4,RfPort=R
+AntennaUnitGroup=4,AntennaNearUnit=2  ; 1  ;S-RET  ;FlexRCU    ;Hw-V3.00@161010  ;MTAU011J402748T--Y1  ;FieldReplaceableUnit=RRU-4,RfPort=R
+AntennaUnitGroup=4,AntennaNearUnit=3  ; 1  ;S-RET  ;FlexRCU    ;Hw-V3.00@161010  ;MTAU011J402748T--Y2  ;FieldReplaceableUnit=RRU-4,RfPort=R
+AntennaUnitGroup=4,AntennaNearUnit=4  ; 1  ;S-RET  ;FlexRCU    ;Hw-V3.00@161010  ;MTAU011J402748T--Y3  ;FieldReplaceableUnit=RRU-4,RfPort=R
+AntennaUnitGroup=4,AntennaNearUnit=5  ; 1  ;S-RET  ;FlexRCU    ;Hw-V3.00@161010  ;MTAU011J402748T--Y4  ;FieldReplaceableUnit=RRU-4,RfPort=R
+AntennaUnitGroup=5,AntennaNearUnit=1  ; 1  ;S-RET  ;FlexRCU    ;Hw-V3.00@161010  ;MTAU011J401569T--R1  ;FieldReplaceableUnit=RRU-5,RfPort=R
+AntennaUnitGroup=5,AntennaNearUnit=2  ; 1  ;S-RET  ;FlexRCU    ;Hw-V3.00@161010  ;MTAU011J401569T--Y1  ;FieldReplaceableUnit=RRU-5,RfPort=R
+AntennaUnitGroup=5,AntennaNearUnit=3  ; 1  ;S-RET  ;FlexRCU    ;Hw-V3.00@161010  ;MTAU011J401569T--Y2  ;FieldReplaceableUnit=RRU-5,RfPort=R
+AntennaUnitGroup=5,AntennaNearUnit=4  ; 1  ;S-RET  ;FlexRCU    ;Hw-V3.00@161010  ;MTAU011J401569T--Y3  ;FieldReplaceableUnit=RRU-5,RfPort=R
+AntennaUnitGroup=5,AntennaNearUnit=5  ; 1  ;S-RET  ;FlexRCU    ;Hw-V3.00@161010  ;MTAU011J401569T--Y4  ;FieldReplaceableUnit=RRU-5,RfPort=R
+AntennaUnitGroup=6,AntennaNearUnit=1  ; 1  ;S-RET  ;FlexRCU    ;Hw-V3.00@161010  ;MTAU011J401521T--R1  ;FieldReplaceableUnit=RRU-6,RfPort=R
+AntennaUnitGroup=6,AntennaNearUnit=2  ; 1  ;S-RET  ;FlexRCU    ;Hw-V3.00@161010  ;MTAU011J401521T--Y1  ;FieldReplaceableUnit=RRU-6,RfPort=R
+AntennaUnitGroup=6,AntennaNearUnit=3  ; 1  ;S-RET  ;FlexRCU    ;Hw-V3.00@161010  ;MTAU011J401521T--Y2  ;FieldReplaceableUnit=RRU-6,RfPort=R
+AntennaUnitGroup=6,AntennaNearUnit=4  ; 1  ;S-RET  ;FlexRCU    ;Hw-V3.00@161010  ;MTAU011J401521T--Y3  ;FieldReplaceableUnit=RRU-6,RfPort=R
+AntennaUnitGroup=6,AntennaNearUnit=5  ; 1  ;S-RET  ;FlexRCU    ;Hw-V3.00@161010  ;MTAU011J401521T--Y4  ;FieldReplaceableUnit=RRU-6,RfPort=R
+-------------------------------------------------------------------------------------------------------------------------------------
+
+=====================================================================================================================================
+XPBOARD   ;ST ;FAULT ;OPER ;PRODUCTNUMBER ;REV    ;SERIAL/NAME ;DATE     ; TEMP ;MO
+=====================================================================================================================================
+XXXXXX    ;   ;      ;     ;XXXXXX        ;XXXXXX ;XXXXXX      ;XXXXXX   ;  999 ;Cabinet=1
+FANGROUP  ;   ;?     ;     ;              ;       ;            ;         ;      ;Cabinet=1,FanGroup=1
+FANGROUP  ;   ;?     ;     ;              ;       ;            ;         ;      ;Cabinet=1,FanGroup=2
+FANGROUP  ;   ;?     ;     ;              ;       ;            ;         ;      ;Cabinet=1,FanGroup=3
+FAN       ; 1 ;N/A   ;N/A  ;BKV106217/1   ;N/A    ;N/A         ;N/A      ;      ;SupportUnit=1 (FAN)
+-------------------------------------------------------------------------------------------------------------------------------------
+
+=====================================================================================================================================
+FRU    ;LNH      ;BOARD       ;RF  ;BP  ;TX (W/dBm)  ;VSWR (RL)   ;RX (dBm) ;UEs  ;Sector/AntennaGroup/Cells (State:CellIds:PCIs)
+=====================================================================================================================================
+RRU-1  ;BXP_2048 ;RRU2219B3   ; A  ;11  ;3.1 (34.9)  ;1.12 (25.1) ;-104.7   ;10   ;SE=1 AG=1 FDD=TTN302ML1 (1:11:246)
+RRU-1  ;BXP_2048 ;RRU2219B3   ; B  ;11  ;3.1 (34.9)  ;1.14 (23.9) ;-104.8   ;10   ;SE=1 AG=1 FDD=TTN302ML1 (1:11:246)
+RRU-2  ;BXP_2049 ;RRU2219B3   ; A  ;11  ;25.4 (44.0) ;1.15 (23.1) ;-87.6    ;26   ;SE=2 AG=2 GT=TN5302F/0 GT=TN5302F/1 GT=TN5302F/2 GT=TN5302F/3 GT=TN5302F/4 FDD=TTN302ML2 (1, 1, 1, 1, 1, 1:21:247)
+RRU-2  ;BXP_2049 ;RRU2219B3   ; B  ;11  ;4.3 (36.3)  ;1.24 (19.4) ;-96.5    ;26   ;SE=2 AG=2 GT=TN5302F/0 GT=TN5302F/1 GT=TN5302F/2 GT=TN5302F/3 GT=TN5302F/4 FDD=TTN302ML2 (1, 1, 1, 1, 1, 1:21:247)
+RRU-3  ;BXP_2050 ;RRU2219B3   ; A  ;11  ;42.3 (46.3) ;1.18 (21.8) ;-92.2    ;24   ;SE=3 AG=3 GT=TN5302G/0 GT=TN5302G/1 GT=TN5302G/2 GT=TN5302G/3 GT=TN5302G/4 FDD=TTN302ML3 (1, 1, 1, 1, 1, 1:31:248)
+RRU-3  ;BXP_2050 ;RRU2219B3   ; B  ;11  ;19.7 (42.9) ;1.13 (24.2) ;-93.6    ;24   ;SE=3 AG=3 GT=TN5302G/0 GT=TN5302G/1 GT=TN5302G/2 GT=TN5302G/3 GT=TN5302G/4 FDD=TTN302ML3 (1, 1, 1, 1, 1, 1:31:248)
+RRU-4  ;BXP_2051 ;RRUS12B8    ; A  ;11  ;22.0 (43.4) ;1.32 (17.1) ;-99.7    ;7    ;SE=4 AG=4 GT=TN5302A/0 GT=TN5302A/1 GT=TN5302A/2 FDD=TTN302MT1 (1, 1, 1, 1:12:246)
+RRU-4  ;BXP_2051 ;RRUS12B8    ; B  ;11  ;9.1 (39.6)  ;1.15 (23.3) ;-99.6    ;7    ;SE=4 AG=4 GT=TN5302A/0 GT=TN5302A/1 GT=TN5302A/2 FDD=TTN302MT1 (1, 1, 1, 1:12:246)
+RRU-5  ;BXP_2052 ;RRUS12B8    ; A  ;11  ;21.4 (43.3) ;1.26 (18.8) ;-99.7    ;3    ;SE=5 AG=5 GT=TN5302B/0 GT=TN5302B/1 GT=TN5302B/2 GT=TN5302B/3 FDD=TTN302MT2 (1, 1, 1, 1, 1:22:247)
+RRU-5  ;BXP_2052 ;RRUS12B8    ; B  ;11  ;2.7 (34.3)  ;1.21 (20.3) ;-100.2   ;3    ;SE=5 AG=5 GT=TN5302B/0 GT=TN5302B/1 GT=TN5302B/2 GT=TN5302B/3 FDD=TTN302MT2 (1, 1, 1, 1, 1:22:247)
+RRU-6  ;BXP_2053 ;RRUS12B8    ; A  ;11  ;21.6 (43.3) ;1.27 (18.4) ;-98.9    ;25   ;SE=6 AG=6 GT=TN5302C/0 GT=TN5302C/1 GT=TN5302C/2 GT=TN5302C/3 FDD=TTN302MT3 (1, 1, 1, 1, 1:32:248)
+RRU-6  ;BXP_2053 ;RRUS12B8    ; B  ;11  ;3.0 (34.7)  ;1.27 (18.4) ;-99.8    ;25   ;SE=6 AG=6 GT=TN5302C/0 GT=TN5302C/1 GT=TN5302C/2 GT=TN5302C/3 FDD=TTN302MT3 (1, 1, 1, 1, 1:32:248)
+RRU-10 ;BXP_2054 ;RRU4418B40T ; A  ;11  ;1.9 (32.8)  ;1.20 (20.7) ;-103.2   ;6    ;SE=10 AG=10 TDD=TTN302ME1 (1:14:246)
+RRU-10 ;BXP_2054 ;RRU4418B40T ; B  ;11  ;1.9 (32.8)  ;1.16 (22.6) ;-104.0   ;6    ;SE=10 AG=10 TDD=TTN302ME1 (1:14:246)
+RRU-10 ;BXP_2054 ;RRU4418B40T ; C  ;11  ;1.3 (31.1)  ;1.05 (32.4) ;-104.4   ;6    ;SE=10 AG=10 TDD=TTN302ME1 (1:14:246)
+RRU-10 ;BXP_2054 ;RRU4418B40T ; D  ;11  ;1.3 (31.1)  ;1.12 (24.7) ;-104.5   ;6    ;SE=10 AG=10 TDD=TTN302ME1 (1:14:246)
+RRU-11 ;BXP_2055 ;RRU4418B40T ; A  ;11  ;1.5 (31.7)  ;1.03 (36.0) ;-99.9    ;12   ;SE=11 AG=11 TDD=TTN302ME2 (1:24:247)
+RRU-11 ;BXP_2055 ;RRU4418B40T ; B  ;11  ;1.5 (31.7)  ;1.03 (35.6) ;-97.5    ;12   ;SE=11 AG=11 TDD=TTN302ME2 (1:24:247)
+RRU-11 ;BXP_2055 ;RRU4418B40T ; C  ;11  ;0.8 (29.1)  ;1.15 (23.2) ;-98.7    ;12   ;SE=11 AG=11 TDD=TTN302ME2 (1:24:247)
+RRU-11 ;BXP_2055 ;RRU4418B40T ; D  ;11  ;0.8 (29.1)  ;1.02 (39.1) ;-97.7    ;12   ;SE=11 AG=11 TDD=TTN302ME2 (1:24:247)
+RRU-12 ;BXP_2056 ;RRU4418B40T ; A  ;11  ;1.5 (31.8)  ;1.02 (40.0) ;-101.0   ;28   ;SE=12 AG=12 TDD=TTN302ME3 (1:34:248)
+RRU-12 ;BXP_2056 ;RRU4418B40T ; B  ;11  ;1.5 (31.8)  ;1.07 (29.2) ;-99.7    ;28   ;SE=12 AG=12 TDD=TTN302ME3 (1:34:248)
+RRU-12 ;BXP_2056 ;RRU4418B40T ; C  ;11  ;0.9 (29.4)  ;1.08 (28.1) ;-101.1   ;28   ;SE=12 AG=12 TDD=TTN302ME3 (1:34:248)
+RRU-12 ;BXP_2056 ;RRU4418B40T ; D  ;11  ;0.9 (29.4)  ;1.09 (27.3) ;-100.6   ;28   ;SE=12 AG=12 TDD=TTN302ME3 (1:34:248)
+-------------------------------------------------------------------------------------------------------------------------------------
+Tip: use option "a" or "af" to show the connected AntennaSubunits and AntennaNearUnits.
+Tip: use option "g" to print graphical view of CPRI connections and RF connections.
+
+Log close: 200303-172603 - /home/v0290320/.gconfd/Seaplane/vswr_parser/sample/N-TTN302MM1-KLUET-TENGAH.log
