@@ -27,7 +27,7 @@ def main():
 
     for opt, arg in options:
         if opt in ('-v', '--version'):
-            print("Zaevswr v1.0.3")
+            print("Zaevswr v1.0.4")
             sys.exit(1)
         elif opt in ('-h', '--help'):
             print("Help is in progress")
